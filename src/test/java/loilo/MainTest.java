@@ -10,16 +10,20 @@ import static org.junit.Assert.assertEquals;
 
 public class MainTest {
     @Test
-    public void テスト001() {
+    public void test_3文字() {
         test("abc");
     }
     @Test
-    public void テスト002() {
+    public void test_4文字() {
         test("abcd");
     }
     @Test
-    public void テスト003() {
+    public void test_5文字() {
         test("abcde");
+    }
+    @Test
+    public void test_6文字() {
+        test("abcdef");
     }
 
     private static void test(String value) {
