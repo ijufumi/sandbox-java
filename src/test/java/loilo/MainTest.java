@@ -25,11 +25,15 @@ public class MainTest {
     public void test_6文字() {
         test("abcdef");
     }
+    @Test
+    public void test_10文字() {
+        test("1234567890");
+    }
 
     private static void test(String value) {
-        List<String> answer = Main.calculate(value);
+        List<String> answer = Main.makeString(value);
         checkSize(answer, value.length());
-        System.out.println(answer);
+        // System.out.println(answer);
     }
 
     private static void checkSize(List<String> answer, int length) {
